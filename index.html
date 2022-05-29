@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anthony - Emerging Technologies</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="https://cdn.glitch.global/aa489783-9371-4b5b-a1e8-a77d525e37d3/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="demo-styles.css" />
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.global/aa489783-9371-4b5b-a1e8-a77d525e37d3/LibertStatue.glb?v=1653462677119"
+        ios-src="https://cdn.glitch.global/aa489783-9371-4b5b-a1e8-a77d525e37d3/LibertStatue.usdz?v=1653462676957"
+        poster="https://cdn.glitch.global/aa489783-9371-4b5b-a1e8-a77d525e37d3/liberty.png?v=1653462676023"
+        alt="A 3D model of the Statue of Liberty"
+        shadow-intensity="4"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>Liberty Enlightening the World</h1>
+          <span
+            >
+            <a href="https://github.com/louisuy" target="_blank"
+              >Anthony Bon Louis Uy Cubillas</a
+            ></span
+          >
+        </span>
+        <a
+          class="cc"
+          href="https://creativecommons.org/licenses/by/2.0/"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.glitch.global/aa489783-9371-4b5b-a1e8-a77d525e37d3/logo.svg"
+          />
+        </a>
+      </section>
+    </div>
+
+    <footer>
+      <span>Pictured is a 3D model of the Statue of Liberty 🗽</span>
+      <span
+        >This is a project for Emerging Technologies - BSc Creative
+        Computing. 👨🏻‍💻</span
+      ><br>
+      <a href="https://glitch.com/edit/#!/remix/model-viewer">
+        <img
+          src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726"
+          alt="remix button"
+          aria-label="remix"
+          height="33"
+        />
+      </a>
+    </footer>
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
